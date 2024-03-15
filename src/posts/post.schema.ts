@@ -12,7 +12,6 @@ export class Post {
   @Field(() => String)
   content: string;
 
-  // user
   @Field(() => User)
   user: User;
 }
