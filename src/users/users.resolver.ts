@@ -1,6 +1,6 @@
 import { Args, Query, Resolver, ResolveField, Parent } from '@nestjs/graphql';
-import { User } from './users.schema';
-import { Post } from 'src/posts/post.schema';
+import { Post } from 'src/schema/graphql/post';
+import { User } from 'src/schema/graphql/user';
 
 @Resolver(() => User)
 export class UsersResolver {

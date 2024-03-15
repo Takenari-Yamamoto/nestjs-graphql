@@ -1,5 +1,6 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { Post } from 'src/posts/post.schema';
+import { Post } from './post';
+import { UserRoleField, UserRoleValue } from './common';
 
 @ObjectType()
 export class User {
@@ -11,4 +12,7 @@ export class User {
 
   @Field(() => [Post])
   posts: Post[];
+
+  @Field(() => UserRoleField)
+  role: UserRoleValue;
 }
