@@ -15,4 +15,7 @@ export class User {
 
   @Field(() => UserRoleField)
   role: UserRoleValue;
+
+  @Field(() => String)
+  age: string;
 }
